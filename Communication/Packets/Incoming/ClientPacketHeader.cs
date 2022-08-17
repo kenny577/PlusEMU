@@ -179,7 +179,7 @@ public static class ClientPacketHeader
     public const uint SetTonerEvent = 1389; //1061
     public const uint SaveWiredTriggerConfigEvent = 3877; //1897
     public const uint PlaceBotEvent = 3770; //2321
-    public const uint GetRelationshipsEvent = 3046; //866
+    public const uint GetRelationshipStatusInfoEvent = 3046; //866
     public const uint SetMessengerInviteStatusEvent = 1663; //1379
     public const uint UseFurnitureEvent = 3249; //3846
     public const uint GetUserFlatCatsEvent = 493; //3672
@@ -234,7 +234,7 @@ public static class ClientPacketHeader
     public const uint UpdateGroupIdentityEvent = 1375; //1062
     public const uint UpdateStickyNoteEvent = 3120; //342
     public const uint UnbanUserFromRoomEvent = 2050; //3060
-    public const uint UnIgnoreUserEvent = 981; //3023
+    public const uint UnignoreUserEvent = 981; //3023
     public const uint OpenGiftEvent = 349; //1515
     public const uint ApplyDecorationEvent = 2729; //728
     public const uint GetRecipeConfigEvent = 2428; //3654
@@ -309,7 +309,7 @@ public static class ClientPacketHeader
     public const uint UpdateMagicTileEvent = 2997; //1248
     public const uint GetStickyNoteEvent = 2469; //2796
     public const uint IgnoreUserEvent = 2374; //2394
-    public const uint BanUserEvent = 3009; //3940
+    public const uint BanUserWithDurationEvent = 3009; //3940
     public const uint UpdateForumSettingsEvent = 3295; //931
     public const uint GetRoomRightsEvent = 3937; //2734
     public const uint SendMsgEvent = 2409; //1981
