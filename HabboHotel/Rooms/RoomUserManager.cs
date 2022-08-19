@@ -190,7 +190,13 @@ public class RoomUserManager
             }
         }
         _room.SendPacket(new UsersComposer(user));
-        if (_room.CheckRights(session, true))
+        if (session.GetHabbo().GetPermissions().HasRight("mod_tool"))
+        {
+            user.SetStatus("flatctrl", "5");
+            session.Send(new YouAreOwnerComposer());
+            session.Send(new YouAreControllerComposer(5));
+        }
+        else if (_room.CheckRights(session, true))
         {
             user.SetStatus("flatctrl", "useradmin");
             session.Send(new YouAreOwnerComposer());
